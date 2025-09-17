@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dr Jacques Bois — Chirurgien cardiaque & bûcheron</title>
+  <meta name="description" content="Site officiel du Dr Jacques Bois, chirurgien cardiaque passionné de bûcheronnage." />
+  <style>
+    :root{--bg:#0b1220;--card:#101820;--accent:#4ade80;--muted:#94a3b8;--glass: rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,#020617 0%, #0a1f13 60%);color:#e6eef8;line-height:1.5}
+    .wrap{max-width:960px;margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#22c55e);display:flex;align-items:center;justify-content:center;font-weight:700;color:#052e16;font-size:1.5rem}
+    h1{margin:0;font-size:1.8rem}
+    p.lead{color:var(--muted);margin:6px 0 0}
+    .hero{background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:22px;margin:20px 0;box-shadow:0 6px 22px rgba(0,0,0,0.6)}
+    .grid{display:grid;grid-template-columns:1fr;gap:20px}
+    @media(min-width:800px){.grid{grid-template-columns:2fr 1fr}}
+    .card{background:var(--card);padding:16px;border-radius:12px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#052e16;text-decoration:none;font-weight:600}
+    .muted{color:var(--muted)}
+    .events li{margin:10px 0;padding:8px;border-radius:8px;background:var(--glass);list-style:none}
+    footer{margin-top:28px;padding-top:18px;border-top:1px dashed rgba(255,255,255,0.08);color:var(--muted);font-size:0.95rem}
+    .form-row{display:flex;gap:8px}
+    input[type="text"], input[type="email"], textarea{flex:1;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.08);background:transparent;color:inherit}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">JB</div>
+        <div>
+          <h1>Dr Jacques Bois</h1>
+          <p class="lead">Chirurgien cardiaque & bûcheron passionné</p>
+        </div>
+      </div>
+      <div class="muted small">Site temporaire officiel</div>
+    </header>
+    <main class="hero">
+      <div class="grid">
+        <section>
+          <h2>À propos</h2>
+          <p>Le Dr Jacques Bois est un <strong>chirurgien cardiaque</strong> reconnu, avec plus de 20 ans d'expérience en chirurgie thoracique et cardiaque. En dehors du bloc opératoire, il cultive une passion singulière : le <strong>bûcheronnage</strong>. Entre précision médicale et travail du bois, il trouve un équilibre unique entre science et nature.</p>
+          <h3>Spécialités médicales</h3>
+          <ul class="events">
+            <li>Chirurgie cardiaque adulte et pédiatrique</li>
+            <li>Transplantation et pontages coronariens</li>
+            <li>Recherche sur les dispositifs d'assistance ventriculaire</li>
+          </ul>
+          <h3>Activité de bûcheron</h3>
+          <p>Passionné de forêts, Jacques Bois pratique l'abattage d'arbres et la sculpture sur bois pendant son temps libre. Il organise régulièrement des ateliers d'initiation au bûcheronnage responsable et à la gestion durable des forêts.</p>
+          <h3>Prochains rendez-vous publics</h3>
+          <ul class="events">
+            <li><strong>Conférence santé-cœur</strong> — 15 octobre 2025, Hôpital de Lyon</li>
+            <li><strong>Atelier bûcheronnage durable</strong> — 22 novembre 2025, Forêt de Chartreuse</li>
+          </ul>
+          <h3>Contact</h3>
+          <form onsubmit="event.preventDefault(); alert('Merci pour votre message (formulaire de démonstration).');">
+            <div class="form-row" style="margin-bottom:8px">
+              <input type="text" placeholder="Votre nom" required />
+              <input type="email" placeholder="Votre e-mail" required />
+            </div>
+            <textarea rows="4" placeholder="Votre message" required></textarea>
+            <div style="margin-top:8px">
+              <button class="btn">Envoyer</button>
+            </div>
+          </form>
+        </section>
+
+        <aside>
+          <div class="card">
+            <h4>Coordonnées</h4>
+            <p class="muted">Consultations privées à Lyon et Grenoble</p>
+            <p><strong>Téléphone :</strong> +33 6 12 34 56 78<br>
+               <strong>Email :</strong> <a href="mailto:contact@drjacquesbois.fr">contact@drjacquesbois.fr</a></p>
+          </div>
+
+          <div class="card" style="margin-top:12px">
+            <h4>Médias & réseaux</h4>
+            <p class="muted">Retrouvez ses actualités sur <a href="#">Instagram</a> • <a href="#">LinkedIn</a></p>
+          </div>
+        </aside>
+      </div>
+      <footer>
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
+          <div>© 2025 Dr Jacques Bois</div>
+          <div class="muted small">Site HTML autonome — à héberger sur Netlify ou GitHub Pages</div>
+        </div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
